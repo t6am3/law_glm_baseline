@@ -106,5 +106,5 @@ def run_all():
 
 if __name__ == '__main__':
     # print(get_tools())
-    # print(run("350781100073458注册的企业名称。", tools=get_tools())[1])
-    run_all()
+    print(run("350781100073458注册的企业名称。", tools=get_tools())[1])
+    # run_all()
