@@ -2,8 +2,6 @@ from pydantic import BaseModel, Field
 from enum import Enum
 
 
-
-
 class CompanyInfo(BaseModel):
     公司名称: str
     公司简称: str

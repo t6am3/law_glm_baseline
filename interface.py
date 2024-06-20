@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from typing import Any, Union
 
+
 @dataclass
 class ToolObservation:
     content_type: str

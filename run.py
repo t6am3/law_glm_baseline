@@ -8,7 +8,7 @@ import time
 from schema import database_schema
 
 
-client = ZhipuAI(api_key="744a0e15aff3556cecea98b101942b4e.mtGz67ASwiMsimxi")
+client = ZhipuAI(api_key="") # 填写你的API Key
 
 system_prompt = """你是一位金融法律专家，你的任务是根据用户给出的query，调用给出的工具接口，获得用户想要查询的答案。
 所提供的工具接口可以查询四张数据表的信息，数据表的schema如下:
@@ -83,7 +83,7 @@ def run_all():
     # pprint(tools)
 
     # 读取lines
-    lines = [i for i in open("./question.json", "r", encoding="utf-8").readlines() if i.strip()]
+    lines = [i for i in open("./question_junior_A.json", "r", encoding="utf-8").readlines() if i.strip()]
 
     def task(line):
         line = json.loads(line)
