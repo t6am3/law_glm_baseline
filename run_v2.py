@@ -2,7 +2,7 @@ from zhipuai import ZhipuAI
 from schema import database_schema
 
 
-client = ZhipuAI(api_key="744a0e15aff3556cecea98b101942b4e.mtGz67ASwiMsimxi")
+client = ZhipuAI(api_key="")
 
 
 def call_glm(messages, model="glm-4",
